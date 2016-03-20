@@ -1,0 +1,5 @@
+content   history_to_file                content/
+skin      history_to_file  classic/1.0   skin/
+locale    history_to_file  en-US         locale/en-US/
+
+overlay chrome://browser/content/browser.xul  chrome://history_to_file/content/browserOverlay.xul

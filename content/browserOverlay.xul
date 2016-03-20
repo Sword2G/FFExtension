@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet type="text/css" href="chrome://global/skin/" ?>
+<?xml-stylesheet type="text/css"
+  href="chrome://history_to_file/skin/browserOverlay.css" ?>
+
+<!DOCTYPE overlay SYSTEM
+  "chrome://history_to_file/locale/browserOverlay.dtd">
+
+<overlay id="history_to_file-browser-overlay"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <script type="application/x-javascript"
+    src="chrome://history_to_file/content/browserOverlay.js" />
+
+  <stringbundleset id="stringbundleset">
+    <stringbundle id="history_to_file-string-bundle"
+      src="chrome://history_to_file/locale/browserOverlay.properties" />
+  </stringbundleset>
+
+  <menupopup id="menu_ToolsPopup">
+    <menu id="xulschoolhello-hello-menu" label="&xulschoolhello.hello.label;"
+      accesskey="&xulschoolhello.helloMenu.accesskey;"
+      insertbefore="devToolsEndSeparator">
+      <menupopup>
+        <menuitem id="xulschoolhello-hello-menu-item"
+          label="&xulschoolhello.hello.label;"
+          accesskey="&xulschoolhello.helloItem.accesskey;"
+          oncommand="XULHistory2fileChrome.BrowserOverlay.sayHello(event);" />
+      </menupopup>
+    </menu>
+  </menupopup>
+
+  <vbox id="appmenuSecondaryPane">
+    <menu id="xulschoolhello-hello-menu-2" label="&xulschoolhello.hello.label;"
+      accesskey="&xulschoolhello.helloMenu.accesskey;"
+      insertafter="devToolsEndSeparator">
+      <menupopup>
+        <menuitem id="xulschoolhello-hello-menu-item-2"
+          label="&xulschoolhello.hello.label;"
+          accesskey="&xulschoolhello.helloItem.accesskey;"
+          oncommand="XULHistory2fileChrome.BrowserOverlay.sayHello(event);" />
+      </menupopup>
+    </menu>
+  </vbox>
+</overlay>
