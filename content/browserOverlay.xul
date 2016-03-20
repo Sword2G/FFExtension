@@ -29,6 +29,13 @@
           oncommand="XULHistory2fileChrome.BrowserOverlay.sayHello(event);" />
       </menupopup>
     </menu>
+
+        <menuitem id="xulschoolhello-hello-menu-item"
+          insertbefore="devToolsEndSeparator"
+          label="&xulschoolhello.hello.label;"
+          accesskey="&xulschoolhello.helloItem.accesskey;"
+          oncommand="XULHistory2fileChrome.BrowserOverlay.sayHello(event);" />
+
   </menupopup>
 
   <vbox id="appmenuSecondaryPane">
